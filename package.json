@@ -1,0 +1,15 @@
+{
+  "name": "allofus-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "origin https://github.com/ryan-barrett/AllofUs-CodeChallenge.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
