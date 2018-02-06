@@ -11,5 +11,8 @@
     "url": "origin https://github.com/ryan-barrett/AllofUs-CodeChallenge.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
