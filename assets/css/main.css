@@ -1,6 +1,67 @@
 html {
   width: 100%;
   height: 100%;
-  background: url("../imgs/bamboo-wood-flooring-texture.jpg");
-  background-repeat: repeat-x;
+  background: url("../imgs/floor-texture-wenge-hardwood-lugher-library-seamless-light.jpg");
+  background-repeat: repeat;
+  background-size: 100%;
+  background-size: cover;
+  z-index: -10;
+  repeat-style: round;
 }
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+a.active {
+  color: #000;
+  text-decoration: underline;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.full-screen {
+  display: flex;
+  width: 500vw;
+  max-width: calc(1920px *3);
+  max-height: 100%;
+  overflow: hidden;
+  height: 100%; /* makes panels the entire window height */
+}
+
+/* .blue {
+  background: url("../imgs/bamboo-wood-flooring-texture.jpg");
+}
+.red {
+  background: url("../imgs/bamboo-wood-flooring-texture.jpg");
+}
+.orange {
+  background: url("../imgs/bamboo-wood-flooring-texture.jpg");
+} */
