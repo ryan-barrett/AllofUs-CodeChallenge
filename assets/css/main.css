@@ -15,6 +15,13 @@ body {
   height: 100%;
 }
 
+.trade-text {
+  color: black;
+  position: relative;
+  bottom: 15px;
+  left: 4%;
+}
+
 .section1 {
   z-index: -15;
 }
@@ -80,7 +87,7 @@ section {
 .early-world-map {
   position: relative;
   left: 1%;
-  bottom: 95px;
+  bottom: 80px;
 }
 
 .drawing {
@@ -107,7 +114,6 @@ section {
 .dead-scrolls-image {
   position: relative;
   top: 8px;
-  /* left: 20px; */
 }
 
 .city-pic-image {

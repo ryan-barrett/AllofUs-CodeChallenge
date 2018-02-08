@@ -1,6 +1,7 @@
 $(document).ready(function() {
   console.log("sanity check");
 
+  //BEGIN SCROLLMAGIC BEHAVIOR
   var controller = new ScrollMagic.Controller({
     globalSceneOptions: {
       duration: $("section").height(),
@@ -10,16 +11,6 @@ $(document).ready(function() {
     vertical: false
   });
 
-  /*
-  object to hold href values of links inside our nav with
-  the class '.anchor-nav'
-
-  scene_object = {
-    '[scene-name]' : {
-      '[target-scene-id]' : '[anchor-href-value]'
-    }
-  }
-  */
   var scenes = {
     intro: {
       intro: "intro-anchor"
@@ -60,7 +51,7 @@ $(document).ready(function() {
     });
   });
 
-  //  Bind scroll to anchor links using Vanilla JavaScript
+  //  Bind scroll to anchor links
   var anchor_nav = document.querySelector(".anchor-nav");
 
   anchor_nav.addEventListener("click", function(e) {
@@ -75,5 +66,10 @@ $(document).ready(function() {
         history.pushState("", document.title, id);
       }
     }
+  });
+  //END SCROLLMAGIC BEHAVIOR
+
+  $(".dead-scrolls-image").tilt({
+    scale: 1.2
   });
 });
