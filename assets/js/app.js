@@ -29,9 +29,6 @@ $(document).ready(function() {
     },
     scene3: {
       "section-2": "anchor2"
-    },
-    scene4: {
-      "section-3": "anchor3"
     }
   };
 

@@ -65,3 +65,27 @@ section {
 .orange {
   background: url("../imgs/bamboo-wood-flooring-texture.jpg");
 } */
+
+.old-world-map {
+  position: relative;
+  top: 10px;
+  /* left: 24%; */
+}
+
+.dead-sea-scrolls {
+  width: 40%;
+  /* height: 100%; */
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  left: 108%;
+  bottom: 180px;
+}
+
+.dead-scrolls-image {
+  position: relative;
+  bottom: 20px;
+}
+
+.qatar-gov {
+}
