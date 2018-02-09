@@ -11,7 +11,7 @@ $(document).ready(function() {
         window.scroll(2396, 150);
         $("main")
           .find(".doc")
-          .fadeOut(1200, function() {
+          .fadeOut(1500, function() {
             $(this).addClass("hidden");
           });
         $(this)
@@ -23,7 +23,7 @@ $(document).ready(function() {
         $(this)
           .parent()
           .find(".map-details")
-          .fadeIn(1200, function() {
+          .fadeIn(1500, function() {
             $(this).removeClass("hidden");
           });
         $(this).addClass("fixed-map");
