@@ -1,6 +1,13 @@
 $(document).ready(function() {
   console.log("sanity check");
 
+  //EVENT HANDLERS
+  $("main")
+    .find(".old-world-map")
+    .on("click", function() {
+      alert("working");
+    });
+
   //BEGIN SCROLLMAGIC BEHAVIOR
   var controller = new ScrollMagic.Controller({
     globalSceneOptions: {
@@ -68,8 +75,4 @@ $(document).ready(function() {
     }
   });
   //END SCROLLMAGIC BEHAVIOR
-
-  $(".dead-scrolls-image").tilt({
-    scale: 1.2
-  });
 });
