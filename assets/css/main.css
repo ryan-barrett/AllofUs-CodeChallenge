@@ -64,6 +64,7 @@ section {
   position: relative;
 }
 
+/* MISC */
 .hidden {
   display: none;
 }
@@ -141,8 +142,8 @@ section {
 .map-details-left {
   width: 25%;
   height: 100%;
-  background: #ffffe6;
-  opacity: 0.7;
+  background: rgba(250, 250, 230, 0.7);
+  /* background: #ffffe6; */
   position: absolute;
   right: 975px;
 }
@@ -169,4 +170,53 @@ section {
 .details-text {
   position: relative;
   top: 60px;
+  left: 14px;
+  width: 95%;
+}
+
+/* DETAIL LINKS */
+#coin {
+  position: relative;
+  transform: scale(1.4);
+  top: 15px;
+  left: 10px;
+}
+
+.coin-frame {
+  width: 190px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  top: 490px;
+  left: 25px;
+}
+
+#detail-link3 {
+  position: relative;
+  top: 390px;
+  left: 80px;
+}
+
+#outside-pic {
+  position: relative;
+  bottom: 105px;
+  right: 120px;
+}
+
+#detail-link2 {
+  position: relative;
+  bottom: 210px;
+  left: 85px;
+}
+
+#classroom-pic {
+  position: relative;
+  bottom: 90px;
+  right: 120px;
+}
+
+#detail-link1 {
+  position: relative;
+  bottom: 200px;
+  left: 80px;
 }

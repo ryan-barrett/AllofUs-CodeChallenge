@@ -1,14 +1,14 @@
 $(document).ready(function() {
-  console.log("sanity check");
-
   //EVENT HANDLERS
   let firstClick = true;
 
+  //handling first click of demo map
   $("main")
     .find(".old-world-map")
     .on("click", function() {
       if (firstClick === true) {
         firstClick = false;
+        window.scroll(2396, 150);
         $("main")
           .find(".doc")
           .fadeOut(1200, function() {
@@ -19,7 +19,7 @@ $(document).ready(function() {
           .html("<h3>Dutch Map of the Middle East 1868</h3>");
         $(this)
           .find(".details-view")
-          .html("<h5>(Click to Exit)</h5>");
+          .html("<h4>(Click to Exit)</h4>");
         $(this)
           .parent()
           .find(".map-details")
@@ -28,7 +28,22 @@ $(document).ready(function() {
           });
         $(this).addClass("fixed-map");
         $(".trade-text").html("");
+        //define scroll position
+        var scrollPosition = [
+          self.pageXOffset ||
+            document.documentElement.scrollLeft ||
+            document.body.scrollLeft,
+          self.pageYOffset ||
+            document.documentElement.scrollTop ||
+            document.body.scrollTop
+        ];
+        var html = $("html"); //Lock scroll position
+        html.data("scroll-position", scrollPosition);
+        html.data("previous-overflow", html.css("overflow"));
+        html.css("overflow", "hidden");
+        window.scrollTo(scrollPosition[0], scrollPosition[1]);
       } else {
+        //handling second click of demo map
         firstClick = true;
         $("main")
           .find(".doc")
@@ -49,10 +64,15 @@ $(document).ready(function() {
           });
         $(this).removeClass("fixed-map");
         $(".trade-text").html("Trade and Global Connections");
+        // un-lock scroll position
+        var html = jQuery("html");
+        var scrollPosition = html.data("scroll-position");
+        html.css("overflow", html.data("previous-overflow"));
+        window.scrollTo(scrollPosition[0], scrollPosition[1]);
       }
     });
 
-  //BEGIN SCROLLMAGIC BEHAVIOR
+  //SCROLLMAGIC BEHAVIOR
   var controller = new ScrollMagic.Controller({
     globalSceneOptions: {
       duration: $("section").height(),
@@ -90,8 +110,8 @@ $(document).ready(function() {
     }
   }
 
-  // Change behaviour of controller
-  // to animate scroll instead of jump
+  /* Change behaviour of controller
+  to animate scroll instead of jump */
   controller.scrollTo(function(target) {
     TweenMax.to(window, 0.5, {
       scrollTo: {
@@ -118,5 +138,4 @@ $(document).ready(function() {
       }
     }
   });
-  //END SCROLLMAGIC BEHAVIOR
 });
