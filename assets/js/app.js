@@ -2,10 +2,54 @@ $(document).ready(function() {
   console.log("sanity check");
 
   //EVENT HANDLERS
+  let firstClick = true;
+
   $("main")
     .find(".old-world-map")
     .on("click", function() {
-      alert("working");
+      if (firstClick === true) {
+        firstClick = false;
+        $("main")
+          .find(".doc")
+          .fadeOut(1200, function() {
+            $(this).addClass("hidden");
+          });
+        $(this)
+          .find(".doc-title")
+          .html("<h3>Dutch Map of the Middle East 1868</h3>");
+        $(this)
+          .find(".details-view")
+          .html("<h5>(Click to Exit)</h5>");
+        $(this)
+          .parent()
+          .find(".map-details")
+          .fadeIn(1200, function() {
+            $(this).removeClass("hidden");
+          });
+        $(this).addClass("fixed-map");
+        $(".trade-text").html("");
+      } else {
+        firstClick = true;
+        $("main")
+          .find(".doc")
+          .fadeIn(1200, function() {
+            $(this).removeClass("hidden");
+          });
+        $(this)
+          .find(".doc-title")
+          .html("<h4>Document 5</h4>");
+        $(this)
+          .find(".details-view")
+          .html("<h5>(Click for Demo)</h5>");
+        $(this)
+          .parent()
+          .find(".map-details")
+          .fadeOut(1200, function() {
+            $(this).addClass("hidden");
+          });
+        $(this).removeClass("fixed-map");
+        $(".trade-text").html("Trade and Global Connections");
+      }
     });
 
   //BEGIN SCROLLMAGIC BEHAVIOR
