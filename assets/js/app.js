@@ -19,7 +19,7 @@ $(document).ready(function() {
           .html("<h3>Dutch Map of the Middle East 1868</h3>");
         $(this)
           .find(".details-view")
-          .html("<h4>(Click to Exit)</h4>");
+          .html("<h4>(Click Map to Exit)</h4>");
         $(this)
           .parent()
           .find(".map-details")
@@ -55,7 +55,7 @@ $(document).ready(function() {
           .html("<h4>Document 5</h4>");
         $(this)
           .find(".details-view")
-          .html("<h5>(Click for Demo)</h5>");
+          .html("<h5>(Click map for Demo)</h5>");
         $(this)
           .parent()
           .find(".map-details")
