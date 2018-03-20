@@ -1,4 +1,4 @@
-<h1>AllofUs Code Challenge</h1>
+<h1>Front end museum exhibit demo</h1>
 <p>User interface demo for museum touch screen</p>
 <h3>User Stories</h3>
 <li>Users will be able to scroll left and right along virtual table</li>
