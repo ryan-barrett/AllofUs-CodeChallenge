@@ -68,6 +68,7 @@ section {
   position: relative;
   bottom: 15px;
   left: 4%;
+  font-size: 180%;
 }
 
 .section1 {
@@ -86,7 +87,7 @@ section {
   position: relative;
   width: 23%;
   overflow-x: hidden;
-  right: 19%;
+  right: 4%;
   top: 70px;
 }
 
@@ -99,7 +100,7 @@ section {
 .early-world-map {
   position: relative;
   left: 1%;
-  bottom: 80px;
+  bottom: 70px;
 }
 
 .drawing {
@@ -117,9 +118,16 @@ section {
 
 .palace {
   position: relative;
-  right: 21%;
+  right: 7%;
   top: 110px;
   transform: rotate(-5deg);
+}
+
+.arabia {
+  position: relative;
+  bottom: 140px;
+  right: 2%;
+  transform: rotate(8deg);
 }
 
 /* STYLING FOR MAIN IMAGES */
